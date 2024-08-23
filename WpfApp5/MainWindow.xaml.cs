@@ -26,11 +26,6 @@ namespace WpfApp5
                 int den2 = int.Parse(Den2.Text);
 
 
-                //int wholeRezult = int.Parse(WholeRezult.Text);
-                //int numRezult = int.Parse(NumRezult.Text);
-                //int denRezult = int.Parse(DenRezult.Text);
-
-                // Convert mixed numbers to improper fractions
                 if (den1 == den2)
                 {
                     WholeRezult.Text = (whole1 + whole2).ToString();
@@ -44,18 +39,6 @@ namespace WpfApp5
                     NumRezult.Text =((den2 * num1) + (den1 * num2)).ToString();
 
                 }
-
-
-
-                //double improperFraction2 = whole2 + (double)num2 / den2;
-
-
-
-                // Calculate the sum
-                //double sum = improperFraction1;// + improperFraction2;
-
-                // Display the result
-              //  ResultTextBlock.Text = "Sum: " + sum.ToString("F2");
             }
             catch (Exception ex)
             {
